@@ -1,0 +1,6 @@
+{
+  "name": "WhisperX AI Studio - ARTYVERSE AVx",
+  "description": "Hyper-polished AI studio with living soft-body mascot physics, formant viseme lip-sync, autonomous STAGE code sandbox, and multi-modal Gemini intelligence.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

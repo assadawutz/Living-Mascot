@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-lime-3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-cyan-3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Gradients -->
+    <linearGradient id="hairGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181D33"/>
+      <stop offset="60%" stop-color="#0E1222"/>
+      <stop offset="100%" stop-color="#B6FF00" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="visorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#B6FF00" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="matrixPortal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B6FF00" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Quantum Grid Floor & Base Halo -->
+  <g transform="translate(0, 30)">
+    <ellipse cx="256" cy="420" rx="200" ry="48" fill="url(#matrixPortal)" />
+    <!-- Hexagonal Matrix Rings -->
+    <ellipse cx="256" cy="420" rx="180" ry="42" fill="none" stroke="#B6FF00" stroke-width="2.5" stroke-dasharray="10 6" filter="url(#glow-lime-3)" />
+    <ellipse cx="256" cy="420" rx="135" ry="30" fill="none" stroke="#00F0FF" stroke-width="1.8" filter="url(#glow-cyan-3)" />
+  </g>
+
+  <!-- Floating Holographic Curved Keyboard Console -->
+  <g id="curved-keyboard" transform="translate(0, -10)">
+    <path d="M 120 380 Q 256 425 392 380 L 405 395 Q 256 445 107 395 Z" fill="#0C1022" stroke="#00F0FF" stroke-width="2.2" filter="url(#glow-cyan-3)" />
+    <!-- Key Matrix Nodes -->
+    <g fill="#B6FF00" filter="url(#glow-lime-3)">
+      <rect x="145" y="386" width="16" height="8" rx="2" transform="rotate(-8 153 390)" />
+      <rect x="175" y="392" width="16" height="8" rx="2" transform="rotate(-5 183 396)" />
+      <rect x="205" y="396" width="16" height="8" rx="2" transform="rotate(-2 213 400)" />
+      <rect x="235" y="398" width="20" height="8" rx="2" />
+      <rect x="268" y="398" width="20" height="8" rx="2" />
+      <rect x="300" y="396" width="16" height="8" rx="2" transform="rotate(2 308 400)" />
+      <rect x="330" y="392" width="16" height="8" rx="2" transform="rotate(5 338 396)" />
+      <rect x="360" y="386" width="16" height="8" rx="2" transform="rotate(8 368 390)" />
+    </g>
+  </g>
+
+  <!-- Mascot Body & Cyber Jacket -->
+  <g id="torso">
+    <!-- Dark Tech Jacket -->
+    <path d="M 140 330 C 140 280, 190 260, 256 260 C 322 260, 372 280, 372 330 L 390 410 C 350 430, 160 430, 122 410 Z" fill="#101426" stroke="#1D2644" stroke-width="2" />
+    
+    <!-- Neon Piping -->
+    <path d="M 190 275 L 170 410" stroke="#00F0FF" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-cyan-3)" />
+    <path d="M 322 275 L 342 410" stroke="#00F0FF" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-cyan-3)" />
+    <path d="M 235 300 L 235 415" stroke="#B6FF00" stroke-width="2.5" filter="url(#glow-lime-3)" />
+    <path d="M 277 300 L 277 415" stroke="#B6FF00" stroke-width="2.5" filter="url(#glow-lime-3)" />
+  </g>
+
+  <!-- Hands Typing Over Keyboard -->
+  <g id="hands">
+    <!-- Left Hand -->
+    <ellipse cx="180" cy="370" rx="16" ry="12" fill="#FED8C4" />
+    <line x1="180" y1="375" x2="185" y2="390" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" filter="url(#glow-cyan-3)" />
+    <!-- Right Hand -->
+    <ellipse cx="332" cy="370" rx="16" ry="12" fill="#FED8C4" />
+    <line x1="332" y1="375" x2="327" y2="390" stroke="#B6FF00" stroke-width="3" stroke-linecap="round" filter="url(#glow-lime-3)" />
+  </g>
+
+  <!-- Head & Cyber Visor Glasses -->
+  <g id="head">
+    <path d="M 235 240 L 235 265 L 277 265 L 277 240 Z" fill="#FED8C4" />
+    <path d="M 165 160 C 165 85, 347 85, 347 160 C 347 225, 305 260, 256 260 C 207 260, 165 225, 165 160 Z" fill="#FFF0E6" />
+
+    <!-- Spiky Cyber Anime Hair -->
+    <path d="M 152 145 C 145 90, 185 30, 256 30 C 327 30, 367 90, 360 145 C 380 170, 370 215, 350 230 C 345 200, 350 170, 340 145 C 320 120, 305 130, 285 105 C 265 135, 245 105, 230 125 C 215 100, 200 125, 180 115 C 170 140, 155 170, 150 210 C 140 190, 142 165, 152 145 Z" fill="url(#hairGrad3)" stroke="#192036" stroke-width="2" />
+    
+    <!-- Lime Cyber Hair Highlights -->
+    <path d="M 210 60 C 235 48, 275 48, 300 60" stroke="#B6FF00" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#glow-lime-3)" />
+    <path d="M 180 95 C 195 85, 215 82, 230 85" stroke="#B6FF00" stroke-width="2.5" stroke-linecap="round" fill="none" filter="url(#glow-lime-3)" />
+
+    <!-- Cheeks Blush -->
+    <ellipse cx="195" cy="200" rx="14" ry="6" fill="#FF4F93" fill-opacity="0.4" />
+    <ellipse cx="317" cy="200" rx="14" ry="6" fill="#FF4F93" fill-opacity="0.4" />
+
+    <!-- Cyber Matrix Visor -->
+    <rect x="172" y="150" width="168" height="38" rx="12" fill="#0A0E1A" stroke="url(#visorGrad)" stroke-width="3" filter="url(#glow-lime-3)" />
+    <!-- Visor Scan Digital Lines -->
+    <line x1="185" y1="162" x2="327" y2="162" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="14 6" />
+    <line x1="185" y1="172" x2="327" y2="172" stroke="#B6FF00" stroke-width="1.8" stroke-dasharray="8 4" />
+    <text x="256" y="174" font-family="monospace" font-size="11" font-weight="bold" fill="#B6FF00" text-anchor="middle" letter-spacing="3">1010011</text>
+
+    <!-- Confident Smirk / Smile -->
+    <path d="M 242 215 C 250 224, 268 224, 276 214" stroke="#1A2035" stroke-width="3.2" stroke-linecap="round" fill="none" />
+    <polygon points="262,218 266,223 268,218" fill="#FFFFFF" />
+  </g>
+
+  <!-- Cyber Cat Ear Audio Nodes on Top -->
+  <g id="audio-nodes">
+    <!-- Left Cyber Ear -->
+    <polygon points="175,95 195,45 220,80" fill="#0E1325" stroke="#00F0FF" stroke-width="2.5" filter="url(#glow-cyan-3)" />
+    <polygon points="182,90 195,58 210,80" fill="#B6FF00" fill-opacity="0.6" />
+    <!-- Right Cyber Ear -->
+    <polygon points="337,95 317,45 292,80" fill="#0E1325" stroke="#00F0FF" stroke-width="2.5" filter="url(#glow-cyan-3)" />
+    <polygon points="330,90 317,58 302,80" fill="#B6FF00" fill-opacity="0.6" />
+  </g>
+
+  <!-- Matrix Code Stream & Sparkles in Background -->
+  <g id="sparkles">
+    <text x="70" y="140" font-family="monospace" font-size="12" fill="#00F0FF" fill-opacity="0.7">&lt;WhisperX/&gt;</text>
+    <text x="360" y="130" font-family="monospace" font-size="12" fill="#B6FF00" fill-opacity="0.8">{ AVx: 100% }</text>
+    <circle cx="100" cy="220" r="3" fill="#B6FF00" filter="url(#glow-lime-3)" />
+    <circle cx="410" cy="230" r="3.5" fill="#00F0FF" filter="url(#glow-cyan-3)" />
+    <circle cx="256" cy="18" r="4" fill="#FF007A" />
+  </g>
+</svg>
